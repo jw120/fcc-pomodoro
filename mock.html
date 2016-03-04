@@ -1,0 +1,88 @@
+<!-- Mock-up of pomodoro, made before writing code, not used in actual implementation -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>FreeCodeCamp Pomodoro Exercise - HTML mockup</title>
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="pomodoro.css">
+</head>
+<body>
+
+<div class="page">
+
+<div class="title">
+    FreeCodeCamp
+</div>
+
+<div class="controls-bar">
+
+  <div class="control">
+    <div class="control-label">
+      BREAK LENGTH
+    </div>
+    <div class="control-widget">
+      <button name="break-length-down" class="widget-button">
+        <span class="fa fa-minus-circle fa-lg"></span>
+      </button>
+      <span class="heading-break-label">5</span>
+      <button name="break-length-up" class="widget-button">
+        <span class="fa fa-plus-circle fa-lg"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="control">
+    <div class="control-label">
+      SESSION LENGTH
+    </div>
+    <div class="control-widget">
+      <button name="session-length-down" class="widget-button">
+        <span class="fa fa-minus-circle fa-lg"></span>
+      </button>
+      <span class="heading-break-label">25</span>
+      <button name="session-length-up" class="widget-button">
+        <span class="fa fa-plus-circle fa-lg"></span>
+      </button>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="tomato-container">
+
+<!-- Render pomodoro with outer-circle radius 100 centred on 220x220 canvas -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="220" height="220">
+
+  <!-- Outer circle -->
+  <circle class="tomato-outer-circle" cx="110" cy="110" r="100" />
+
+  <!-- Inner circle - partially filled -->
+  <defs>
+    <clipPath id="tomato-inner-circle-clip">
+      <rect x="0" y="160" width="220" height="50" />
+    </clipPath>
+  </defs>
+  <circle class="tomato-inner-circle" cx="110" cy="110" r="90" clip-path="url(#tomato-inner-circle-clip)"/>
+
+  <!-- Label text -->
+  <text class="tomato-label" x="110" y="60" text-anchor="middle">
+    Session
+  </text>
+
+  <!-- Timer text -->
+  <text class="tomato-timer" x="110" y="160" text-anchor="middle">
+    22:45
+  </text>
+
+</svg>
+
+</div>
+
+</div>
+
+</body>
+</html>

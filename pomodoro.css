@@ -1,0 +1,100 @@
+/* Page background is black */
+body {
+  background-color: black;
+  width: 400px;
+  margin: 0px auto;
+}
+
+/* Overall page elements evenly spaced vertically and centred horizontally in fixed height */
+.page {
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-family: "Times New Roman",serif;
+  font-size  : 24pt;
+  color: white;
+}
+
+/* Bar with the two controls has spaced out controls */
+.controls-bar {
+  width: 400px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Control label and control-widget spaced our vertically in each control */
+.control {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control-label {
+  font-family: sans-serif;
+  font-size  : 10pt;
+  color: white;
+}
+
+/* Buttons and value in control-widget spaced out horizontally */
+.control-widget {
+  font-family: sans-serif;
+  font-size  : 12pt;
+  color: white;
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.widget-button {
+  background-color: black;
+  color: white;
+  border: 0px;
+}
+
+.debug {
+  color: white;
+  font-size: 8pt;
+}
+
+/* Tomato centred on the page */
+.tomato-container {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.tomato-inner-circle-Break {
+  fill: red;
+  stroke: red;
+}
+
+.tomato-inner-circle-Session {
+  fill: green;
+  stroke: green;
+}
+
+.tomato-outer-circle {
+  fill: none;
+  stroke: green;
+  stroke-width: 2pt;
+}
+
+.tomato-label {
+  fill: white;
+  font-family: sans-serif;
+  font-size  : 24pt;
+}
+
+.tomato-timer {
+  fill: white;
+  font-family: sans-serif;
+  font-size  : 24pt;
+}
