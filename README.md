@@ -2,6 +2,7 @@ To compile
 
 ```
 elm make src/Main.elm --output elm.js
+./build.sh
 ```
 
-Then open `pomodoro.html`
+Then open `dist/index.html`
