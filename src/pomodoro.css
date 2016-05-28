@@ -1,7 +1,7 @@
 /* Page background is black */
 body {
   background-color: black;
-  width: 400px;
+/*  width: 400px; */
   margin: 0px auto;
 }
 
@@ -22,7 +22,8 @@ body {
 
 /* Bar with the two controls has spaced out controls */
 .controls-bar {
-  width: 400px;
+  min-width: 300px;
+  max-width: 400px;
   height: 40px;
   display: flex;
   justify-content: space-around;
@@ -54,9 +55,11 @@ body {
 }
 
 .widget-button {
-  background-color: black;
-  color: white;
-  border: 0px;
+    width: 2em;
+    margin: auto;
+    color: white;
+    border: 0px;
+    background-color: black;
 }
 
 .debug {
